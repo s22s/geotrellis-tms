@@ -1,8 +1,10 @@
+name := "geotrellis-tms"
+
 lazy val commonSettings = Seq(
   version := Version.geopyspark,
   scalaVersion := Version.scala,
   crossScalaVersions := Version.crossScala,
-  description := "GeoPySpark",
+  description := "GeoTrellis TMS Server",
   organization := "org.locationtech.geotrellis",
   licenses := Seq("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.html")),
   scalacOptions ++= Seq(
@@ -33,6 +35,6 @@ scalaVersion := Version.scala
 
 lazy val root = Project("root", file("."))
 
-lazy val geotrellisProject = Project("geotrellis-backend", file("geotrellis"))
+lazy val core = project
   .settings(commonSettings: _*)
   .dependsOn(root)
