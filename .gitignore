@@ -1,0 +1,12 @@
+*.class
+*.log
+.cache
+.history
+.lib/
+target/
+
+.idea
+*.tiff.aux.xml
+*.hdf5
+.ipynb_checkpoints
+metastore_db
